@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    overflow-x: hidden;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+   
+}
+button:hover {
+    background-color: #0056b3;
+}
+article{
+    margin:5px;
+}
+input{
+    /* outline:none; */
+    width:100%;
+    min-width:50px;
+    margin:5px 0;
+}
+input:focus{
+    outline: 2px solid yellow;
+}
+input[name=firstName],input[name=lastName]{
+    min-width:25px;
+}
+section{
+    z-index: -1;
+}
+ /* Simple styling for the form */
+#register{
+    position: absolute;
+    background-color: #ffffff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:60vw;
+    border-radius:15px;
+    padding:100px;
+    display: none;
+    z-index:999;
+    /* margin-top:150px; */
+}
+.google{
+    width:50px;
+}
+.facebook{
+    
+    width:50px;
+}
+#register form{
+    position: relative;
+    /* padding:1em 5em; */
+    min-width: 300px;
+    /* margin: 0 auto; */
+}
+
+/* #register .close{
+    
+} */
+a{
+    color:black;
+}
+a:hover{
+    color:blue;
+}
+img{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+}
+
+.aside-section{
+    display: flex;
+    flex-direction: column;
+}
+#main{
+    position: relative;
+}
+.recommended{
+    position: absolute;
+    top:15vh;
+    right:0;
+    width:30%;
+}
+.card-item p{
+    vertical-align: middle;
+    line-height: 2;
+}
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMAGES/hero-image-1.jpg');
+    /* background-blend-mode: multiply; */
+    /* min-height: 500px; */
+    height:75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-item{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin:15px 5px;
+    border-bottom:2px solid blue;
+    padding:5px;
+}
+p{
+    margin:0;
+}
+.article-action{
+    font-size:2rem;
+}
+.article-action:hover{
+    color:black;
+}
+.user-details{
+    gap:15px;
+}
+.user-details img{
+    background-color: #bdbdbd;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+@media screen and (max-width:500px){
+    #register{
+        width:100%;
+        margin:50px auto;
+    }
+    .blog-item{
+        width:100%;
+    }
+    .recommended{
+        position: relative;
+        top:0;
+        right:0;
+        width:100%;
+    }
+}
